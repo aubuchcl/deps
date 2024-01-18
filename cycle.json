@@ -6,9 +6,11 @@
       "image": {
         "name": "frontend",
         "origin": {
-          "type": "cycle-source",
+          "type": "docker-file",
           "details": {
-            "source_id": "65a87fe71a27295e560bf15d"
+            "existing": {
+                "source_id": "65a87fe71a27295e560bf15d"
+            }
           }
         }
       },
@@ -28,9 +30,11 @@
       "image": {
         "name": "backend",
         "origin": {
-          "type": "cycle-source",
+          "type": "docker-file",
           "details": {
-            "source_id": "65a8800e1a27295e560bf167"
+            "existing": {
+                "source_id": "65a8800e1a27295e560bf167"
+            }
           }
         }
       },
