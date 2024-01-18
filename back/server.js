@@ -17,7 +17,7 @@ app.use(cors(
 
 
 app.get('/api/data', (req, res) => {
-  res.json({ message: `Some Fake Return: ${generateRandomNumber(1,1000)}` });
+  res.json({ message: `Generate Random Number: ${generateRandomNumber(1,1000)}` });
 });
 
 app.listen(port, () => {
