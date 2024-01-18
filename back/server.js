@@ -9,11 +9,7 @@ function generateRandomNumber(min, max) {
 
 
 
-app.use(cors(
-  {
-    origin: "https://app.dec.chrisaubuchon.com"
-  }
-));
+app.use(cors());
 
 
 app.get('/api/data', (req, res) => {
