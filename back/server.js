@@ -2,6 +2,13 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+app.use(cors(
+  {
+    origin: "https://app.dec.chrisaubuchon.com"
+  }
+));
+
+
 app.get('/api/data', (req, res) => {
   res.json({ message: 'Fake Data from API' });
 });
