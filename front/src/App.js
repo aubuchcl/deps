@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/data')
+    fetch('http://dec.chrisaubuchon.com/api/data')
       .then(response => response.json())
       .then(data => setData(data.message));
   }, []);
