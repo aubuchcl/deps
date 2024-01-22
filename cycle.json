@@ -14,17 +14,7 @@
             }
           }
         },
-        "config": {
-          "network": {
-            "public": "enable",
-            "hostname": "frontend",
-            "ports": ["80:80", "443:80"]
-          },
-          "deploy": {
-            "instances": 1
-          }
-        }
-      },
+        "{{config-1}}",
       "backend": {
         "name": "backend",
         "image": {
