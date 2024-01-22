@@ -14,7 +14,7 @@
             }
           }
         },
-        "config": "{{config-1}}"
+        "config": {{config-1}}
       },
       "backend": {
         "name": "backend",
