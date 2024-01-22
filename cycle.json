@@ -9,7 +9,7 @@
             "type": "docker-file",
             "details": {
               "existing": {
-                  "source_id": "65a87fe71a27295e560bf15d"
+                  "source_id": "{{frontend-source-id}}"
               }
             }
           }
