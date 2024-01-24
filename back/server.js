@@ -11,7 +11,7 @@ function generateRandomNumber(min, max) {
 
 app.use(cors(
   {
-    origin: "https://app.dec.chrisaubuchon.com"
+    origin: ["https://app.dec.chrisaubuchon.com", "https://dev.app.chrisaubuchon.com"]
   }
 ));
 
