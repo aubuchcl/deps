@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState('');
 
   const fetchData = () => {
-    fetch('https://dec.chrisaubuchon.com/api/data')
+    fetch(`${process.env.URL}`)
       .then(response => response.json())
       .then(data => setData(data.message));
   };
