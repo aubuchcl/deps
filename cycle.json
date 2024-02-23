@@ -1,53 +1,53 @@
 {
-    "version": "1.0",
-    "containers": {
-      "frontend": {
+  "version": "1.0",
+  "containers": {
+    "frontend": {
+      "name": "frontend",
+      "image": {
         "name": "frontend",
-        "image": {
-          "name": "frontend",
-          "origin": {
-            "type": "docker-file",
-            "details": {
-              "existing": {
-                  "source_id": "65d8ebcbb9e0f384aac6b9d0d"
-              }
+        "origin": {
+          "type": "docker-file",
+          "details": {
+            "existing": {
+              "source_id": "65d8ebcbb9e0f384aac6b9d0d"
             }
-          }
-        },
-        "config": {
-          "network": {
-            "public": "enable",
-            "hostname": "frontend",
-            "ports": ["80:80", "443:80"]
-          },
-          "deploy": {
-            "instances": 1
           }
         }
       },
-      "backend": {
+      "config": {
+        "network": {
+          "public": "enable",
+          "hostname": "frontend",
+          "ports": ["80:80", "443:80"]
+        },
+        "deploy": {
+          "instances": 1
+        }
+      }
+    },
+    "backend": {
+      "name": "backend",
+      "image": {
         "name": "backend",
-        "image": {
-          "name": "backend",
-          "origin": {
-            "type": "docker-file",
-            "details": {
-              "existing": {
-                  "source_id": "65d8ec15b9e0f384aac6b9e4"
-              }
+        "origin": {
+          "type": "docker-file",
+          "details": {
+            "existing": {
+              "source_id": "65d8ec15b9e0f384aac6b9e4"
             }
           }
+        }
+      },
+      "config": {
+        "network": {
+          "public": "enable",
+          "hostname": "backend",
+          "ports": ["80:3000", "443:3000"]
         },
-        "config": {
-          "network": {
-            "public": "enable",
-            "hostname": "backend",
-            "ports": ["80:3000", "443:3000"]
-          },
-          "deploy": {
-            "instances": 1
-          }
+        "deploy": {
+          "instances": 1
         }
       }
     }
   }
+}
