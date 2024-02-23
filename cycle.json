@@ -24,7 +24,7 @@
             "type": "docker-file",
             "details": {
               "existing": {
-                  "source_id": "65a8800e1a27295e560bf167"
+                  "source_id": "{{backend-source-id}}"
               }
             }
           }
